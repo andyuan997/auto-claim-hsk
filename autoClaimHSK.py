@@ -6,12 +6,14 @@ import keyboard
 
 def simulate_work_command():
     pyautogui.typewrite('/work')
+    time.sleep(0.1)
     pyautogui.press('enter')
     pyautogui.press('enter')
     print(f"{datetime.now()} - 輸入/work")
 
 def simulate_daily_command():
     pyautogui.typewrite('/daily')
+    time.sleep(0.1)
     pyautogui.press('enter')
     pyautogui.press('enter')
     print(f"{datetime.now()} - 輸入/daily")
